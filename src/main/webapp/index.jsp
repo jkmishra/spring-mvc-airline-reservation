@@ -59,7 +59,7 @@
 				<a class="btn btn-navbar" data-toggle="collapse"
 					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
 					class="icon-bar"></span> <span class="icon-bar"></span>
-				</a> <a class="brand" href="/air">AIR LINES INTERNATIONAL TRAVEL</a>
+				</a> <a class="brand" href="/gammaair">AIR LINES INTERNATIONAL TRAVEL</a>
 				<div class="nav-collapse">
 					<ul class="nav pills">
 						<li class="active"><a
@@ -345,7 +345,7 @@
     	
         $.get("resources/datatemplates/flightList.html", function (template){
             //alert(template);
-            $.get("/air/searchResultsJson?leavingFrom=" + origin + "&goingTo=" + destination + "&startDate=" + startDate + "&endDate=" + endDate, function (data){ 
+            $.get("/gammaair/searchResultsJson?leavingFrom=" + origin + "&goingTo=" + destination + "&startDate=" + startDate + "&endDate=" + endDate, function (data){ 
 				//alert("***" + data);
                 $("#dataRegion").html("");
                 $.tmpl(template, data).appendTo("#dataRegion"); 
@@ -360,7 +360,7 @@
     {
     	alert("***" + code);
         $.get("resources/datatemplates/deals.html", function (template){
-            $.get("/air/deals/" + code, function (data){ 
+            $.get("/gammaair/deals/" + code, function (data){ 
                 $("#dataRegion").html("");
                 $.tmpl(template, data).appendTo("#dataRegion"); 
             });

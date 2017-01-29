@@ -5,7 +5,7 @@
         "http://ibatis.apache.org/dtd/sql-map-2.dtd">
         
 <sqlMap namespace="location">
-  <resultMap id="result" class="com.hcl.air.domain.Location">
+  <resultMap id="result" class="com.gamma.air.domain.Location">
     <result property="id" column="id" columnIndex="1"/>
     <result property="code" column="code" columnIndex="2"/>
     <result property="name" column="name" columnIndex="3"/>
@@ -13,7 +13,7 @@
     <result property="country" column="country" columnIndex="4"/>
   </resultMap>
   
-  <resultMap id="flight" class="com.hcl.air.domain.Flight">
+  <resultMap id="flight" class="com.gamma.air.domain.Flight">
     <result property="id" column="id"/>
 	<result property="airline" column="airline"/>
     <result property="startAirport" column="start_airport"/>
@@ -29,7 +29,7 @@
 	<result property="price" column="price"/>
   </resultMap>
   
-  <resultMap id="deal" class="com.hcl.air.domain.Deal">
+  <resultMap id="deal" class="com.gamma.air.domain.Deal">
     <result property="id" column="id"/>
 	<result property="locationCode" column="location_code"/>
     <result property="price" column="price"/>

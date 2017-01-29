@@ -14,7 +14,7 @@
         <file>demo.log</file>
     </appender>
 	
-	<logger name="com.hcl.air" level="DEBUG" additivity="false">
+	<logger name="com.gamma.air" level="DEBUG" additivity="false">
 		<appender-ref ref="FILE" />
 	</logger>
 	  
